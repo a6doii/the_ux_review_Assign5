@@ -36,17 +36,46 @@ body {
     background-color: white;
     margin-bottom: 18px;
     padding: 10px;
-    
+    display: flex;
+    align-items: center;
+    z-index: 1000;
 }
 .logo{
-    justify-self: center;
+    justify-self: start;
+}
+.logo span{
+    color: #ff6900;
+}
+.burger_menu{
+    border: 3px solid black;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    left: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px 0px black;
+}
+.burger_menu:checked{
+left: 2000px;
+}
+.dash{
+    border: 2px solid black;
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 5px;
 }
 .nav-links{
     margin-inline: auto;
     padding: auto;
     justify-content: center;
     width: 90%;
-    position: relative;
+    position: absolute;
+    left: 2000px;
     align-items: center;
     border: 1px solid red;
 }
@@ -64,5 +93,7 @@ body {
     color: white;
     height: 50px;
     margin-inline: auto;
+    position: absolute;
+    left: 2000px;
     
 }
